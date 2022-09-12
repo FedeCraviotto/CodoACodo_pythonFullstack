@@ -1,0 +1,51 @@
+.footer-encontranos {
+    background-color: rgb(214, 214, 214);
+}
+
+.footer-encontranos__icon,
+.footer-encontranos__title {
+    color: #6E6E64;
+}
+
+.footer-social__icon,
+.footer-inst__title,
+.footer-social__header-icon,
+.footer-social__title,
+.footer-inst__icon {
+    color:#396FA5;
+}
+
+.footer-subscribe,
+.footer-anclas {
+    background-color: #396FA5;
+    color: #FFF;
+}
+
+.footer-inst__links {
+    padding-left: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-anclas__column a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-anclas__column h4 {
+    text-decoration: underline;
+}
+
+.footer-subscribe a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-legals p {
+    color: #6E6E64;
+}
+
+.footer-legals a {
+    text-decoration: none;
+    color: rgb(57, 111, 165);
+}
