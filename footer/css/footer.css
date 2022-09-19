@@ -224,12 +224,32 @@
 }
 
 @media screen and (min-width:992px) {
-    .footer-social__content {
-        display: flex;
-        flex-wrap: wrap;
+    .footer-inst {
+        padding-top:30px
+    }
+    .footer-social {
+        width: 50%;
+    }
+    .lower-footer__container {
+        position: relative;
     }
     .footer-inst-social__container {
         display: flex;
+        background-color: #F7F7F7;
+        height: 350px;
+        align-items: flex-start;
+    }
+    .footer-subscribe {
+        position: absolute;
+        top: -82px;
+        width: 50%;
+    }
+    .footer-social__contact {
+        width: 50%;
+    }
+    .footer-social__content {
+        display: flex;
+        flex-wrap: wrap;
     }
     .footer-inst {
         width: 50%;
