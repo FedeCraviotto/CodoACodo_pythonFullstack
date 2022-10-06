@@ -9,7 +9,7 @@
 /* index.html & gallery.html CSS comienza*/
 
 .gallery {
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(15, 15, 15);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px -115px;
@@ -112,7 +112,7 @@
 
 .footer, .nav {
     text-align: center;
-    background-color: black;
+    background-color:rgb(15, 15, 15);
     color: white;
     display: flex;
     justify-content: space-around;
