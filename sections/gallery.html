@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles02.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>Gallery</title>
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <h1>Gallery</h1>
+        <nav>
+            <ul class="menu1">
+              <li>X.X.X.</li>  <!-- Este xxx y el logoes representativo -->
+              <a href="../index.html"><img src="../images/Argentina_2.svg" alt="logo" width="35px"></a>
+            </ul>
+            <ul class="menu2">
+              <li>
+                  <a>Galeria </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Retratos</a></li>
+                    <li><a class="dropdown-item" href="#">Paisajes</a></li>
+                    <li><a class="dropdown-item" href="#">Comidas</a></li>
+                    <li><a class="dropdown-item" href="#">Vida marina</a></li>
+                  </ul> 
+              </li>
+              <li>
+                  <a href="acercade.html">Acerca de</a>
+              </li>
+              <li>
+                <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="../index.html">Home</a>
+                    </li>
+            </ul>
+
         </nav>
     </header>
     <main>
+        <div class="stickyDiv"></div>
         <div class="gallery">
             <div class="gallery-container">
                 <img src="../images/seaLife/coral.jpg" alt="" class="img1 gallery-img">
@@ -37,10 +62,10 @@
         </div>
         <div class="footer-socials">
             <div class="footer-socials__pinterest">
-                <i class="fa-brands fa-pinterest"></i>
+                <a href="https://pinterest.com/" target="_blank" class="socials__anchor"><i class="fa-brands fa-pinterest"></i></a>
             </div>
             <div class="footer-socials__instagram">
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/" target="_blank" class="socials__anchor"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </footer>

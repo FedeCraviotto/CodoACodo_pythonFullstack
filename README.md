@@ -1,12 +1,13 @@
 # CodoACodo_pythonFullstack
 ## TPO Desarrollo Web - HTML, CSS y Javascript
-Grupo 3:
-Integrantes:
+### Grupo 3 - Integrantes:
 
-Julian Cipelli
+Julian Cipelli <br />
 Federico Nicolás Craviotto
 
-- Objetivos:
+### Tablero de Trello : https://trello.com/b/GBJqPDdu/grupo-python-codo-a-codo
+
+### - Objetivos:
  - Desarrollar un proyecto con al menos 4 páginas HTML
  - Temática libre
  - El sitio debe contener un formulario de contacto con validaciones de campo
@@ -14,3 +15,4 @@ Federico Nicolás Craviotto
  - Tener al menos 1 sección responsive con 3 puntos de corte (breakpoints)
  - Incorporar al menos 1 animación, transición, o tranformación
  - Consumir una API rest desde Javascript
+
