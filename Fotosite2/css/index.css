@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+  font-family:'Abel', sans-serif;
+}
+
+/* estilos para el menú */
+
+header {
+  margin:auto;
+  width:100%;
+  height:100%;
+  font-family:'Abel', sans-serif;
+  color: #f8fafc;
+  /* position: fixed; */
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: rgb(15, 15, 15);
+  height: 12vh;
+}
+nav ul:last-child {
+  display: flex;
+}
+
+.menu2 li a {
+  padding: 10px;
+  font-weight: bold;
+  color: #f8fafc;
+}
+
+.menu2 li ul li a {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+.menu2 > li {
+ float: left;
+ padding: 25px;
+}
+
+.menu2 > li > ul  {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+}
+
+.menu2 > li a:hover  {
+  color:rgb(251, 229, 152);
+}
+
+.menu2 > li:hover > ul {
+  display:block;
+ }
+
+
+li {
+  list-style: none;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+/* estilos para el body del index.html empieza */
+
+.titulo {
+  color: #f8fafc;
+  padding-top: 10em;
+  display: block;
+}
+
+.titulo h3 {
+  margin: 0, auto;
+}
+
+
+.portada {
+  display: flex;
+  justify-content: space-around;
+}
+/* estilos para el body del index.html termina */
+
+/* estilos para acercade.html empieza */
+
+
+.contenedorbiografia {
+
+  background-color: rgb(15, 15, 15);
+  color:#f8fafc;
+  display:grid;
+  grid-template-columns:60% 40%;
+  grid-gap:20px;
+  justify-content: space-around;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  padding: 80px 6vw;
+  margin-left:auto;
+}
+
+.parrafobio {
+  margin-left: 0px;
+  grid-template-columns: minmax(150px, auto);
+  max-width: 535px;
+}
+
+
+.imgbiografia {
+  text-align: center;
+  padding: 8vh 1vw 2vh
+}
+
+h1 {
+  margin-bottom:50px;
+}
+.clientes {
+
+  text-align: start;
+}
+.clientes>p {
+padding:1vw 18vw 1vw 0vw;
+}
+
+.contenedorbiografia .clienteslogos {
+  align-self: end;
+  text-align: justify;
+  padding-bottom: 8vh;
+}
+/* estilos para acercade.html termina */
+
+/* estilos para contacto.html empieza*/
+
+.contenedorcontacto {
+  background-color: rgb(15, 15, 15);
+  color:#f8fafc;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:20px;
+  justify-content: space-around;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  padding: 80px;
+}
+
+.datosusuario {
+  display:grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows:repeat (5, 1fr);
+  grid-gap: 5px;
+  justify-items:start;
+}
+
+.datosusuario .datosusuario2 {
+  grid-column-start: 2;
+  border: 0;
+  border-bottom: solid, 1px;
+  border-color:#f8fafc
+}
+.datosusuario .datosusuario7 {
+  grid-column: span 2;
+}
+
+.datosusuario .datosusuario8 {
+  text-align: start;
+}
+/* .formulario {
+  border: 0.5px solid #f8fafc;
+  border-radius: 4px;
+  padding: 50px;
+} */
+
+
+input[type=text], input[type=number], input[type=email]  {
+  /* border: 0; */
+  height: 30px;
+  margin: 15px;
+  box-sizing: border-box;
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+textarea {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+label:hover {
+  color: rgb(251, 229, 152);
+
+}
+
+input[type=submit] {
+  width: 15vw;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(15, 15, 15);
+  border-color: #f8fafc;
+  border-radius: 5px;
+  color: #f8fafc;
+  padding: 15px;
+  min-width: 113px;
+}
+
+input[type=submit]:hover {
+  color:rgb(251, 229, 152);
+  border-color: rgb(251, 229, 152);
+}
+
+.footer, .nav {
+  text-align: center;
+  background-color:rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* estilos para contacto.html termina*/
+
+/* estilos para el footer empieza */
+
+.footer-data {
+  font-size: 1.5em;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+  column-gap: 30px;
+}
+
+.socials__anchor {
+  text-decoration: none;
+  color: white;
+}
