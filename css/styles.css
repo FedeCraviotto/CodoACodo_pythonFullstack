@@ -98,9 +98,9 @@
 .gallery-img:hover{
     cursor: pointer;
     position: relative;
-    z-index: 2;
     transform: scale(1.1);
-    filter: grayscale(0%)
+    filter: grayscale(0%);
+    z-index: 0;
     }
     
 .img1 {
@@ -273,4 +273,60 @@ body {
     
   }
 
-/* header CSS termina*/
+/* propiedad display --> saca al elemento del flow
+   propiedad visibility --> NO saca al elemento del flow */
+.modal__container {
+  display:none;
+  opacity: 0;
+}
+
+.modal__container.active {
+  animation : fade-in 1000ms forwards;
+}
+
+.modal__container.active {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 9;
+}
+
+.modal__container.active::after {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  z-index: 9;
+}
+
+.modal__container img {
+  width: 1100px;
+  height: 600px;
+  z-index: 10;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
