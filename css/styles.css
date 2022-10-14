@@ -62,7 +62,34 @@
     ;
     gap: 30px;
 }
-
+/*gallery-retratos.html CSS comienza*/
+.gallery-retratos {
+  background-color: rgb(15, 15, 15);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15vw;
+}
+.gallery-container-retratos {
+  background-color:rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 15vh);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+  "img1 img1 img2 img3 img3"
+  "img1 img1 img2 img3 img3"
+  "img4 img4 img5 img3 img3"
+  "img4 img4 img8 img8 img9"
+  "img6 img7 img8 img8 img9"
+  ;
+  gap: 30px;
+}
+/*gallery-retratos.html CSS termina. Lo que sigue es es comun a ambas galerias (vida marina y retratos)*/
 .gallery-img {
     transition: 0.8s;
     filter: grayscale(100%);
@@ -137,6 +164,7 @@
     text-decoration: none;
     color: white;
 }
+
 /* index.html & gallery.html CSS termina*/
 
 /* header CSS comienza*/
@@ -148,7 +176,7 @@ body {
   header {
     margin:auto;
     width:100%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Abel', sans-serif;
     color: #f8fafc;
     position: fixed;
     z-index: 20;
