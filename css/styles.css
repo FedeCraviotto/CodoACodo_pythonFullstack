@@ -184,7 +184,7 @@ body {
     font-family:'Abel', sans-serif;
     color: #f8fafc;
     position: fixed;
-    z-index: 20;
+    z-index: 7;
   }
   
   nav {
@@ -277,14 +277,10 @@ body {
     
   }
 
-/* propiedad display --> saca al elemento del flow
-   propiedad visibility --> NO saca al elemento del flow */
 .modal__container {
-  display:none;
-}
-
-.modal__container.active {
-  animation : fade-in 1000ms forwards;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 700ms ease-in;
 }
 
 .modal__container.active {
@@ -295,7 +291,9 @@ body {
   align-items: center;
   justify-content: center;
   top: 0;
-  left: 9;
+  left: 0;
+  opacity: 1;
+  z-index: 9;
 }
 
 .modal__container.active::after {
@@ -315,25 +313,11 @@ body {
   z-index: 10;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.background-scroll {
+  
 }
 
-@keyframes fade-out {
-  100% {
-    opacity: 1;
-  }
-
-  0% {
-    opacity: 0;
-  }
-}
-
+/*MEDIA QUERIES*/
 @media (min-width:576px) {
   .gallery__container {
     grid-template-columns: 315px;
