@@ -63,9 +63,13 @@
     width: 95%;
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(9, 235px);
-    grid-template-columns: 285px;
     justify-content: center;
+    gap: 30px;
+    grid-template-columns: 285px;
+    grid-auto-rows: max(285px);
+
+    /* grid-template-rows: repeat(9, 235px);
+    grid-template-columns: 285px;
     grid-template-areas: 
     "img1"
     "img2"
@@ -76,8 +80,7 @@
     "img7"
     "img8"
     "img9"
-    ;
-    gap: 30px;
+    ; */
 }
 /*gallery-retratos.html CSS comienza*/
 .gallery-retratos {
@@ -355,7 +358,9 @@ body {
     padding: 0px 25px;
   }
   .gallery__container {
-    grid-template-rows: repeat(9, 235px);
+    grid-template-columns: repeat(2, 360px);
+    
+    /* grid-template-rows: repeat(9, 235px);
     grid-template-columns: repeat(2, 360px);
     grid-template-areas: 
     "img1 img2"
@@ -367,7 +372,7 @@ body {
     "img7 img8"
     "img9 img9"
     "img9 img9"
-    ;
+    ; */
   }
   .modal__container img {
     width: 710px;
@@ -381,12 +386,11 @@ body {
    }
   .gallery {
     padding: 50px;
-}
+  }
+  .gallery-img {
+    object-fit: cover;
+  }
   .gallery__container {
-    background-color:rgba(0, 0, 0, 0.25);
-    width: 95%;
-    height: 100%;
-    display: grid;
     /* grid-template-rows: repeat(5, 15vh);
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
@@ -398,11 +402,10 @@ body {
     ; */
     grid-template-rows: unset;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 400px;
-    gap: 30px;
-}
-.modal__container img {
-  width: 1100px;
-  height: 600px;
-}
+    grid-auto-rows: fit-content(400px);
+  }
+  .modal__container img {
+    width: 1100px;
+    height: 600px;
+  }
 }
