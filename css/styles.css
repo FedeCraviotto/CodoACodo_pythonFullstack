@@ -18,6 +18,37 @@
     background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
 }
 
+/*Intersection observer settings*/
+.observedNav {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.observedElement {
+  opacity: 0;
+  filter: blur(25px);
+  transform: translateX(-110%);
+  transition: all 1.5s ease;
+}
+
+.observedElement:nth-child(2n + 1) {
+  transition-delay: 1s;
+}
+
+.observedElement:nth-child(2n + 2) {
+  transition-delay: 0.55s;
+}
+
+.showElement {
+  filter: blur(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+nav.showElement {
+  opacity: 1;
+}
+
 /* index.html & gallery.html CSS comienza*/
 
 .gallery {
@@ -340,6 +371,12 @@ body {
 
 
 /*MEDIA QUERIES*/
+@media(prefers-reduced-motion) {
+  .observedElement,
+  .observedNav {
+    transition: none;
+  }
+}
 @media (min-width:576px) {
   .menu2 > li {
     padding: 0px 15px;
