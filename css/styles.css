@@ -142,7 +142,7 @@
     height: 100%;
 }
 
-.footer, .nav {
+.footer, .footer-contact, .nav {
     text-align: center;
     background-color:rgb(15, 15, 15);
     color: white;
@@ -151,6 +151,15 @@
     align-items: center;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+
+.footer {
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.footer-contact {
+  width: 100%;
 }
 
 .footer-data {
@@ -313,9 +322,6 @@ body {
   z-index: 10;
 }
 
-.background-scroll {
-  
-}
 
 /*MEDIA QUERIES*/
 @media (min-width:576px) {
