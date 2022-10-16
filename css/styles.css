@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Abel', sans-serif;
-  }
-
-  html::-webkit-scrollbar {
-    width: 12px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Abel", sans-serif;
 }
 
-  html::-webkit-scrollbar-thumb {
-    background: #434343;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
-  html::-webkit-scrollbar-track {
-    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+body {
+  background-color: rgb(15, 15, 15);
 }
 
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
 /*Intersection observer settings*/
 .observedNav {
   opacity: 0;
@@ -52,54 +56,54 @@ nav.showElement {
 /* index.html & gallery.html CSS comienza*/
 
 .gallery {
-    background-color: rgb(15, 15, 15);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px -115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  background-color: rgb(15, 15, 15);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .stickyDiv {
   height: 107px;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
 }
 
 .index {
-    background-image: url('../images/profile/03guy.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px -115px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    min-height: 90vh;
+  background-image: url("../images/profile/03guy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  min-height: 90vh;
 }
 
 .index h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
-    
+
 .index__paragraph {
-    background-color: none;
-    padding: 15%;
+  background-color: none;
+  padding: 15%;
 }
 
 .gallery__container {
-    background-color:rgba(0, 0, 0, 0.25);
-    width: 95%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    gap: 30px;
-    grid-template-columns: 285px;
-    grid-auto-rows: max(285px);
+  background-color: rgb(15, 15, 15);
+  width: 95%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: 285px;
+  grid-auto-rows: max(285px);
 
-    /* grid-template-rows: repeat(9, 235px);
+  /* grid-template-rows: repeat(9, 235px);
     grid-template-columns: 285px;
     grid-template-areas: 
     "img1"
@@ -125,79 +129,79 @@ nav.showElement {
   padding: 50px 15vw;
 }
 .gallery-container-retratos {
-  background-color:rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 95%;
   height: 100%;
   display: grid;
   grid-template-rows: repeat(5, 15vh);
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: 
-  "img1 img1 img2 img3 img3"
-  "img1 img1 img2 img3 img3"
-  "img4 img4 img5 img3 img3"
-  "img4 img4 img8 img8 img9"
-  "img6 img7 img8 img8 img9"
-  ;
+  grid-template-areas:
+    "img1 img1 img2 img3 img3"
+    "img1 img1 img2 img3 img3"
+    "img4 img4 img5 img3 img3"
+    "img4 img4 img8 img8 img9"
+    "img6 img7 img8 img8 img9";
   gap: 30px;
 }
 /*gallery-retratos.html CSS termina. Lo que sigue es es comun a ambas galerias (vida marina y retratos)*/
 .gallery-img {
-    transition: 0.8s;
-    filter: grayscale(100%);
-    width: 100%;
-    height: 100%;
+  transition: 0.8s;
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-img__container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.gallery-img:hover{
-    cursor: pointer;
-    position: relative;
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    z-index: 0;
-    }
-    
+.gallery-img:hover {
+  cursor: pointer;
+  position: relative;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  z-index: 0;
+}
+
 .img1 {
-    grid-area: img1;
+  grid-area: img1;
 }
 .img2 {
-    grid-area: img2;
+  grid-area: img2;
 }
 .img3 {
-    grid-area: img3;
+  grid-area: img3;
 }
 .img4 {
-    grid-area: img4;
+  grid-area: img4;
 }
 .img5 {
-    grid-area: img5;
+  grid-area: img5;
 }
 .img6 {
-    grid-area: img6;
+  grid-area: img6;
 }
 .img7 {
-    grid-area: img7;
+  grid-area: img7;
 }
 .img8 {
-    grid-area: img8;
+  grid-area: img8;
 }
 
 .img9 {
-    grid-area: img9;
+  grid-area: img9;
 }
 
-.footer, .footer-contact, .nav {
-    text-align: center;
-    background-color:rgb(15, 15, 15);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+.footer,
+.footer-contact {
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .footer {
@@ -210,128 +214,237 @@ nav.showElement {
 }
 
 .footer-data {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .footer-socials {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 3em;
-    column-gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+  column-gap: 30px;
 }
 
 .socials__anchor {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* index.html & gallery.html CSS termina*/
 
 /* header CSS comienza*/
 
-body {
-    background-color: rgb(15, 15, 15);;
-  }
-  
-  header {
-    margin:auto;
-    width:100%;
-    font-family:'Abel', sans-serif;
-    color: #f8fafc;
-    position: fixed;
-    z-index: 7;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    background-color: rgb(15, 15, 15);
-    height: 12vh;
-  }
-  nav ul:last-child {
-    display: flex;
-  }
-  
-  .menu2 li a {
-    padding: 10px;
-    font-weight: bold;
-    color: #f8fafc;
-  }
-  
-  .menu2 li ul li a {
-    background-color: rgb(15, 15, 15);
-    color: #f8fafc;
-    text-decoration: none;
-    display: block;
-    padding: 20px;
-  }
-  
-  .menu2 > li {
-   float: left;
-  }
-  
-  .menu2 > li > ul  {
-    display: none;
-    position: absolute;
-    min-width: 120px;
-  }
-  
-  .menu2 > li a:hover  {
-    color:rgb(251, 229, 152);
-  }
-  
-  .menu2 > li:hover > ul {
-    display:block;
-   }
-  
-  
-  li {
-    list-style: none;
-  }
-  
-  a:link, a:visited, a:active {
-    text-decoration: none;
-  }
-  
-  /* estilos para acerca de */
-  
-  
-  .contenedorbiografia {
-    
-    background-color: rgb(15, 15, 15);
-    color:#f8fafc;
-    display:grid;
-    grid-template-columns:60% 40%;
-    grid-gap:20px;
-    /* text-align: center; */
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    padding: 80px;
-  }
-  .contenedorbiografia .imgbiografia {
-    text-align: center;
-    padding: 8vh 1vw 2vh
-  }
-  
-  h1 {
-    margin-bottom:50px;
-  }
-  .textobiografia, .clientes {
-    padding:5vw 18vw 5vw 3vw;
-    text-align: start;
-  }
-  
-  .contenedorbiografia .clienteslogos {
-    align-self: end;
-    text-align: justify;
-    padding-bottom: 8vh;
-    
-  }
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Abel", sans-serif;
+  color: #f8fafc;
+  position: fixed;
+  z-index: 7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: rgb(15, 15, 15);
+  height: 12vh;
+}
+nav ul:last-child {
+  display: flex;
+}
+
+.menu2 li a {
+  padding: 10px;
+  font-weight: bold;
+  color: #f8fafc;
+}
+
+.menu2 li ul li a {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+.menu2 > li {
+  float: left;
+}
+
+.menu2 > li > ul {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+}
+
+.menu2 > li a:hover {
+  color: rgb(251, 229, 152);
+}
+
+.menu2 > li:hover > ul {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* estilos para el main del index.html empieza */
+
+.titulo {
+  color: #f8fafc;
+  padding-top: 10em;
+  display: block;
+}
+
+.titulo h3 {
+  margin: 0, auto;
+}
+
+.portada {
+  display: flex;
+  justify-content: space-around;
+}
+/* estilos para el main del index.html termina */
+
+/* estilos para acerca de */
+
+.contenedor_biografia {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 20px;
+  justify-content: space-around;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  padding: 80px 6vw;
+}
+
+.parrafo_bio {
+  margin-left: 0px;
+  grid-template-columns: minmax(150px, auto);
+  max-width: 535px;
+}
+
+.img_biografia {
+  text-align: center;
+  padding: 8vh 1vw 2vh;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.clientes {
+  text-align: start;
+}
+.clientes > p {
+  padding: 1vw 18vw 1vw 0vw;
+}
+
+.contenedor_biografia .clientes_logos {
+  align-self: end;
+  text-align: justify;
+  padding-bottom: 8vh;
+}
+/* estilos para acercade.html termina */
+
+/* estilos para contacto.html empieza*/
+
+.contenedor_contacto {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-around;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  padding: 80px;
+}
+
+.datos_usuario {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat (5, 1fr);
+  grid-gap: 5px;
+  justify-items: start;
+}
+
+.datos_usuario .datos_usuario2 {
+  grid-column-start: 2;
+  border: 0;
+  border-bottom: solid, 1px;
+  border-color: #f8fafc;
+}
+.datos_usuario .datos_usuario7 {
+  grid-column: span 2;
+}
+
+.datos_usuario .datos_usuario8 {
+  text-align: start;
+}
+/* .formulario {
+  border: 0.5px solid #f8fafc;
+  border-radius: 4px;
+  padding: 50px;
+} */
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  /* border: 0; */
+  height: 30px;
+  margin: 15px;
+  box-sizing: border-box;
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+textarea {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+label:hover {
+  color: rgb(251, 229, 152);
+}
+
+input[type="submit"] {
+  width: 15vw;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(15, 15, 15);
+  border-color: #f8fafc;
+  border-radius: 5px;
+  color: #f8fafc;
+  padding: 15px;
+  min-width: 113px;
+}
+
+input[type="submit"]:hover {
+  color: rgb(251, 229, 152);
+  border-color: rgb(251, 229, 152);
+}
+/* estilos para contacto.html termina*/
+
+/* estilos para gallery empieza*/
 
 .modal__container {
   position: fixed;
@@ -368,16 +481,17 @@ body {
   height: 300px;
   z-index: 10;
 }
-
+/* estilos para gallery termina*/
 
 /*MEDIA QUERIES*/
-@media(prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
   .observedElement,
   .observedNav {
     transition: none;
   }
 }
-@media (min-width:576px) {
+
+@media (min-width: 576px) {
   .menu2 > li {
     padding: 0px 15px;
   }
@@ -390,13 +504,13 @@ body {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .menu2 > li {
     padding: 0px 25px;
   }
   .gallery__container {
     grid-template-columns: repeat(2, 360px);
-    
+
     /* grid-template-rows: repeat(9, 235px);
     grid-template-columns: repeat(2, 360px);
     grid-template-areas: 
@@ -417,10 +531,10 @@ body {
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .menu2 > li {
     float: left;
-   }
+  }
   .gallery {
     padding: 50px;
   }
