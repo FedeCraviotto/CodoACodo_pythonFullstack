@@ -130,7 +130,7 @@ nav.showElement {
 }
 .gallery-container-retratos {
   background-color: rgba(0, 0, 0, 0.25);
-  width: 95%;
+  width: 98%;
   height: 100%;
   display: grid;
   grid-template-rows: repeat(5, 15vh);
@@ -143,7 +143,7 @@ nav.showElement {
     "img6 img7 img8 img8 img9";
   gap: 30px;
 }
-/*gallery-retratos.html CSS termina. Lo que sigue es es comun a ambas galerias (vida marina y retratos)*/
+/*gallery-retratos.html CSS termina. */
 .gallery-img {
   transition: 0.8s;
   filter: grayscale(100%);
@@ -302,8 +302,12 @@ a:active {
 
 .titulo {
   color: #f8fafc;
-  padding-top: 10em;
+  padding: 10em 5vw 0;
   display: block;
+}
+
+h1 {
+  margin-bottom: 5vh;
 }
 
 .titulo h3 {
@@ -338,20 +342,30 @@ a:active {
   max-width: 535px;
 }
 
+.parrafo_bio h2 {
+  padding:5vh 5vw 0;
+}
+
+.parrafo_bio p, .parrafo_bio ul li {
+  margin-left: 5vw;
+}
+
+.clientes p {
+  margin-left: 5vw;
+}
+
+
 .img_biografia {
   text-align: center;
   padding: 8vh 1vw 2vh;
 }
 
-h1 {
-  margin-bottom: 50px;
-}
-
 .clientes {
+  margin-top: 5vh;
   text-align: start;
 }
 .clientes > p {
-  padding: 1vw 18vw 1vw 0vw;
+  padding: 1vw 12vw 1vw 0vw;
 }
 
 .contenedor_biografia .clientes_logos {
@@ -362,19 +376,11 @@ h1 {
 /* estilos para acercade.html termina */
 
 /* estilos para contacto.html empieza*/
-
 .contenedor_contacto {
   background-color: rgb(15, 15, 15);
   color: #f8fafc;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: space-around;
-  /* text-align: center; */
-  height: 100%;
-  width: 100%;
   margin-left: auto;
-  padding: 80px;
+  padding: 4vw;
 }
 
 .datos_usuario {
@@ -491,6 +497,44 @@ input[type="submit"]:hover {
   }
 }
 
+@media (min-width: 300px) {
+  .contenedor_contacto {
+    margin-left: 4vw;
+  }
+
+  .contacto {
+    margin-bottom: 80px;
+}
+.portada {
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+}
+.titulo {
+  color: #f8fafc;
+  padding: 5em 5vw 0;
+  display: block;
+}
+.contenedor_biografia {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: space-around;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  padding: 80px 6vw;
+}
+.img_biografia {
+  text-align: center;
+  padding: 8vh 1vw 2vh;
+}
+
+
+
 @media (min-width: 576px) {
   .menu2 > li {
     padding: 0px 15px;
@@ -502,8 +546,75 @@ input[type="submit"]:hover {
     width: 540px;
     height: 500px;
   }
-}
+  .gallery-container-retratos {
+    grid-template-rows: repeat(9, 235px);
+    grid-template-columns: 290px;
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8"
+    "img9"
+    ;
+    text-align: center;
+  }
+  .titulo {
+  padding: 5em 5vw 0;
+  }
 
+  .portada {
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .contenedor_biografia {
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    padding: 80px 6vw;
+  }
+  .img_biografia {
+    text-align: center;
+    padding: 8vh 1vw 2vh;
+  }
+  
+
+  .contenedor_contacto {
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin-left: 4vw;
+  }
+
+  .contacto {
+    margin-bottom: 40px;
+  }
+
+  .datos_usuario {
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 5px;
+    justify-items: start;
+  }
+}
+  
 @media (min-width: 768px) {
   .menu2 > li {
     padding: 0px 25px;
@@ -511,10 +622,17 @@ input[type="submit"]:hover {
   .gallery__container {
     grid-template-columns: repeat(2, 360px);
 
-    /* grid-template-rows: repeat(9, 235px);
+  }
+  .modal__container img {
+    width: 710px;
+    height: 550px;
+  }
+  .gallery-container-retratos {
+    grid-template-rows: repeat(11, 235px);
     grid-template-columns: repeat(2, 360px);
     grid-template-areas: 
     "img1 img2"
+    "img3 img3"
     "img3 img3"
     "img3 img3"
     "img4 img5"
@@ -523,11 +641,45 @@ input[type="submit"]:hover {
     "img7 img8"
     "img9 img9"
     "img9 img9"
-    ; */
+    "img9 img9"
+    ;
   }
-  .modal__container img {
-    width: 710px;
-    height: 550px;
+  .titulo {
+    padding: 15em 5vw 0;
+    display: block;
+  }
+
+  .portada {
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+  }
+  .contenedor_biografia {
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+    justify-content: space-around;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    padding: 80px 6vw;
+  }
+
+  .contenedor_contacto {
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    padding: 5vw;
   }
 }
 
@@ -555,8 +707,46 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: fit-content(400px);
   }
-  .modal__container img {
+    .modal__container img {
     width: 1100px;
     height: 600px;
+  }
+  .gallery-retratos {
+    background-color: rgb(15, 15, 15);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .gallery-container-retratos {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 98%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 15vh);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "img1 img1 img2 img3 img3"
+      "img1 img1 img2 img3 img3"
+      "img4 img4 img5 img3 img3"
+      "img4 img4 img8 img8 img9"
+      "img6 img7 img8 img8 img9";
+    gap: 30px;
+  }
+  .contenedor_contacto {
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    padding: 80px;
   }
 }
