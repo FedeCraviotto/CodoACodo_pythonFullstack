@@ -3,7 +3,7 @@ let imageURLs = ['hipocampus2', 'fish2', 'fish3', 'fish4', 'fish5', 'fish6', 'co
 
 imageURLs.forEach((imgLink, index) => { // Itero sobre el array de nombres de archivos
     let galleryImgContainer = document.createElement('div'); // En cada vuelta creo un contenedor
-    galleryImgContainer.classList.add('gallery-img__container', 'observedElement'); // Seteo la clase con el overflow=hidden;
+    galleryImgContainer.classList.add('gallery-img__container', 'observedImage'); // Seteo la clase con el overflow=hidden;
     galleryImgContainer.innerHTML = //Le agrego el HTML de la imágen. Uso backticks y ${} para agregar js.
     ` 
         <img src="../images/seaLife/${imgLink}.jpg" alt="${imgLink}" class="img${index + 1} gallery-img">

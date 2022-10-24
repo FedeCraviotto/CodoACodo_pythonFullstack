@@ -28,29 +28,56 @@ html::-webkit-scrollbar-track {
   transition: all 2s;
 }
 
-.observedElement {
+.observedImage {
   opacity: 0;
   filter: blur(25px);
   transform: translateX(-110%);
   transition: all 1.5s ease;
 }
 
-.observedElement:nth-child(2n + 1) {
+.observedElement {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s ease-in-out;
+}
+
+.transition-quick1 {
+  transition: all 1s ease 0.5s;
+}
+
+.transition-quick2 {
+  transition: all 1s ease 0.8s;
+}
+
+.transition-delay1 {
+  transition: all 0.5s ease-in-out 2s;
+}
+
+.transition-delay2 {
+  transition: all 0.8s ease-in-out 2s;
+}
+
+.observedImage:nth-child(2n + 1) {
   transition-delay: 1s;
 }
 
-.observedElement:nth-child(2n + 2) {
+.observedImage:nth-child(2n + 2) {
   transition-delay: 0.55s;
 }
 
-.showElement {
+.showImage {
   filter: blur(0);
   transform: translateX(0);
   opacity: 1;
 }
 
-nav.showElement {
+nav.showNav {
   opacity: 1;
+}
+
+.showElement {
+  opacity: 1;
+  filter: blur(0);
 }
 
 /* index.html & gallery.html CSS comienza*/
@@ -67,7 +94,7 @@ nav.showElement {
 }
 
 .stickyDiv {
-  height: 107px;
+  height: 79px;
   background-color: rgb(15, 15, 15);
 }
 
@@ -133,14 +160,20 @@ nav.showElement {
   width: 98%;
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(5, 15vh);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(9, 235px);
+  grid-template-columns: 290px;
   grid-template-areas:
-    "img1 img1 img2 img3 img3"
-    "img1 img1 img2 img3 img3"
-    "img4 img4 img5 img3 img3"
-    "img4 img4 img8 img8 img9"
-    "img6 img7 img8 img8 img9";
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8"
+    "img9";
+  text-align: center;
+  justify-content: center;
   gap: 30px;
 }
 /*gallery-retratos.html CSS termina. */
@@ -207,6 +240,8 @@ nav.showElement {
 .footer {
   flex-direction: column;
   padding-bottom: 1em;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .footer-contact {
@@ -214,14 +249,15 @@ nav.showElement {
 }
 
 .footer-data {
-  font-size: 1.5em;
+  display: none;
+  font-size: 1em;
 }
 
 .footer-socials {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 3em;
+  font-size: 2em;
   column-gap: 30px;
 }
 
@@ -260,6 +296,7 @@ nav ul:last-child {
   padding: 10px;
   font-weight: bold;
   color: #f8fafc;
+  font-size: 14px;
 }
 
 .menu2 li ul li a {
@@ -302,21 +339,25 @@ a:active {
 
 .titulo {
   color: #f8fafc;
-  padding: 10em 5vw 0;
+  padding: 3vh 5vw;
   display: block;
+}
+
+.titulo h3 {
+  margin: 0 auto;
+  letter-spacing: 8px;
 }
 
 h1 {
   margin-bottom: 5vh;
 }
 
-.titulo h3 {
-  margin: 0, auto;
+.portada {
+  text-align: center;
 }
 
-.portada {
-  display: flex;
-  justify-content: space-around;
+.fotoportada img{
+width: 100%;
 }
 /* estilos para el main del index.html termina */
 
@@ -326,14 +367,18 @@ h1 {
   background-color: rgb(15, 15, 15);
   color: #f8fafc;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   justify-content: space-around;
   /* text-align: center; */
   height: 100%;
-  width: 100%;
-  margin-left: auto;
-  padding: 80px 6vw;
+  width: 90%;
+  margin: 0px auto;
+  padding: 40px 0px;
+}
+
+.texto_biografia h1 {
+  margin-bottom: 6vh;
 }
 
 .parrafo_bio {
@@ -342,11 +387,18 @@ h1 {
   max-width: 535px;
 }
 
-.parrafo_bio h2 {
-  padding:5vh 5vw 0;
+.parrafo_bio ul li {
+  list-style-type: square;
+
 }
 
-.parrafo_bio p, .parrafo_bio ul li {
+.parrafo_bio h2,
+.parrafo_bio p {
+  padding: 15px 0px;
+}
+
+.parrafo_bio p,
+.parrafo_bio ul li {
   margin-left: 5vw;
 }
 
@@ -354,10 +406,12 @@ h1 {
   margin-left: 5vw;
 }
 
-
 .img_biografia {
   text-align: center;
   padding: 8vh 1vw 2vh;
+}
+.img_biografia img{
+  width: 100%;
 }
 
 .clientes {
@@ -379,16 +433,23 @@ h1 {
 .contenedor_contacto {
   background-color: rgb(15, 15, 15);
   color: #f8fafc;
-  margin-left: auto;
-  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0px auto;
+
 }
+
 
 .datos_usuario {
   display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: repeat (5, 1fr);
+  grid-template-columns: 45% 45%;
+  grid-template-rows: repeat(2,100px) 80px 200px 70px;
   grid-gap: 5px;
-  justify-items: start;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .datos_usuario .datos_usuario2 {
@@ -404,28 +465,16 @@ h1 {
 .datos_usuario .datos_usuario8 {
   text-align: start;
 }
-/* .formulario {
-  border: 0.5px solid #f8fafc;
-  border-radius: 4px;
-  padding: 50px;
-} */
 
-input[type="text"],
-input[type="number"],
-input[type="email"] {
-  /* border: 0; */
-  height: 30px;
-  margin: 15px;
-  box-sizing: border-box;
-  background-color: rgb(15, 15, 15);
-  color: #f8fafc;
-  text-decoration: none;
-}
 
 textarea {
   background-color: rgb(15, 15, 15);
   color: #f8fafc;
   text-decoration: none;
+}
+
+textarea.comentarios2 {
+  display: none;
 }
 
 label:hover {
@@ -434,7 +483,6 @@ label:hover {
 
 input[type="submit"] {
   width: 15vw;
-  margin-top: 25px;
   margin-bottom: 10px;
   background-color: rgb(15, 15, 15);
   border-color: #f8fafc;
@@ -489,53 +537,71 @@ input[type="submit"]:hover {
 }
 /* estilos para gallery termina*/
 
+.contacto {
+  margin-bottom: 80px;
+}
+
+.copyright p {
+  font-size: 10px;
+}
+
+.btn-anchor {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  background-color: #4b4b75;
+  color: white;
+  border-radius: 5px;
+  line-height: 1.8;
+}
+
+.newsletter p {
+  margin: 5px 0px 10px;
+  padding : 5px 0px;
+}
+
+/* .datos_usuario div input {
+
+} */
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  /* border: 0; */
+  height: 30px;
+  margin: 15px 0px;
+  box-sizing: border-box;
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+}
+/* 
+input[type="submit"] {
+  width: 15vw;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(15, 15, 15);
+  border-color: #f8fafc;
+  border-radius: 5px;
+  color: #f8fafc;
+  padding: 15px;
+  min-width: 113px;
+} */
+
+
 /*MEDIA QUERIES*/
 @media (prefers-reduced-motion) {
-  .observedElement,
+  .observedImage,
   .observedNav {
     transition: none;
   }
 }
 
-@media (min-width: 300px) {
-  .contenedor_contacto {
-    margin-left: 4vw;
-  }
-
-  .contacto {
-    margin-bottom: 80px;
-}
-.portada {
-  display: grid;
-  justify-content: space-around;
-  text-align: center;
-}
-.titulo {
-  color: #f8fafc;
-  padding: 5em 5vw 0;
-  display: block;
-}
-.contenedor_biografia {
-  background-color: rgb(15, 15, 15);
-  color: #f8fafc;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  justify-content: space-around;
-  /* text-align: center; */
-  height: 100%;
-  width: 100%;
-  margin-left: auto;
-  padding: 80px 6vw;
-}
-.img_biografia {
-  text-align: center;
-  padding: 8vh 1vw 2vh;
-}
-
-
 
 @media (min-width: 576px) {
+  .footer-data {
+    display: block;
+  }
   .menu2 > li {
     padding: 0px 15px;
   }
@@ -546,31 +612,7 @@ input[type="submit"]:hover {
     width: 540px;
     height: 500px;
   }
-  .gallery-container-retratos {
-    grid-template-rows: repeat(9, 235px);
-    grid-template-columns: 290px;
-    grid-template-areas: 
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "img5"
-    "img6"
-    "img7"
-    "img8"
-    "img9"
-    ;
-    text-align: center;
-  }
-  .titulo {
-  padding: 5em 5vw 0;
-  }
 
-  .portada {
-    display: grid;
-    justify-content: space-around;
-    text-align: center;
-  }
   .contenedor_biografia {
     background-color: rgb(15, 15, 15);
     color: #f8fafc;
@@ -588,7 +630,6 @@ input[type="submit"]:hover {
     text-align: center;
     padding: 8vh 1vw 2vh;
   }
-  
 
   .contenedor_contacto {
     background-color: rgb(15, 15, 15);
@@ -614,14 +655,17 @@ input[type="submit"]:hover {
     justify-items: start;
   }
 }
-  
+
 @media (min-width: 768px) {
+  .fotoportada {
+    width: 75%;
+    margin: 0px auto;
+  }
   .menu2 > li {
     padding: 0px 25px;
   }
   .gallery__container {
     grid-template-columns: repeat(2, 360px);
-
   }
   .modal__container img {
     width: 710px;
@@ -630,30 +674,20 @@ input[type="submit"]:hover {
   .gallery-container-retratos {
     grid-template-rows: repeat(11, 235px);
     grid-template-columns: repeat(2, 360px);
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img3"
-    "img3 img3"
-    "img3 img3"
-    "img4 img5"
-    "img6 img6"
-    "img6 img6"
-    "img7 img8"
-    "img9 img9"
-    "img9 img9"
-    "img9 img9"
-    ;
-  }
-  .titulo {
-    padding: 15em 5vw 0;
-    display: block;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img3"
+      "img3 img3"
+      "img3 img3"
+      "img4 img5"
+      "img6 img6"
+      "img6 img6"
+      "img7 img8"
+      "img9 img9"
+      "img9 img9"
+      "img9 img9";
   }
 
-  .portada {
-    display: flex; 
-    justify-content: space-around;
-    text-align: center;
-  }
   .contenedor_biografia {
     background-color: rgb(15, 15, 15);
     color: #f8fafc;
@@ -683,7 +717,57 @@ input[type="submit"]:hover {
   }
 }
 
+@media (min-width: 992px) {
+  .menu2 li a {
+    font-size: 20px;
+  }
+  .portada {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    width: 45%;
+  }
+  .fotoportada {
+    margin: 0;
+    width: 45%;
+  }
+  .fotoportada img{
+    width: 100%;
+    }
+}
+
 @media (min-width: 1200px) {
+  textarea.comentarios {
+    display: none;
+  }
+  textarea.comentarios2 {
+    display: block;
+  }
+  .parrafo_bio h2 {
+    padding: 5vh 5vw 0;
+  }
+  .contenedor_biografia {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    /* border: 0; */
+    height: 30px;
+    margin: 15px;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    color: #f8fafc;
+    text-decoration: none;
+}
   .menu2 > li {
     float: left;
   }
@@ -707,7 +791,7 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: fit-content(400px);
   }
-    .modal__container img {
+  .modal__container img {
     width: 1100px;
     height: 600px;
   }
@@ -748,5 +832,11 @@ input[type="submit"]:hover {
     width: 100%;
     margin-left: auto;
     padding: 80px;
+  }
+}
+
+@media (min-width: 1980px) {
+  .menu2 li a {
+    font-size: 30px;
   }
 }
