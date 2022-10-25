@@ -10,3 +10,13 @@ imageURLs.forEach((imgLink, index) => { // Itero sobre el array de nombres de ar
     `; // Cada nombre de imagen lo inserto en el path del src, en el alt, y uso el index para que cada imágen sea creada con una clase sea distinta 
     galleryContainer.append(galleryImgContainer); // Termina la vuelta y agrego el div con la img
 });
+
+let galleryRetratosContainer = document.querySelector('.gallery-container-retratos');
+let retratosimageURLs = ['r1', 'r2', 'r3','r4', 'r5', 'r6','r7', 'r8', 'r9'];
+retratosimageURLs.forEach((imgLink, index) => { 
+    let galleryImgContainer = document.createElement('div'); 
+    galleryImgContainer.classList.add('gallery-img__container', 'observedImage'); 
+    galleryImgContainer.innerHTML = 
+    `<img src="../images/Retratos/${imgLink}.jpg" alt="${imgLink}" class="img${index + 1} gallery-img">`; 
+galleryContainer.append(galleryImgContainer); 
+});
