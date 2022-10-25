@@ -24,6 +24,13 @@ const elementObserver = new IntersectionObserver((elements) => {
     });
 });
 
+const contactPageElementObserver = new IntersectionObserver((elements) => {
+    elements.forEach(element => {
+        if (element.isIntersecting) {
+            element.target.classList.add('showElement-contactPage');
+        }
+    });
+});
 let hiddenElements = document.querySelectorAll('.observedImage');
 hiddenElements.forEach(element => {
     imgObserver.observe(element);
@@ -35,4 +42,9 @@ navObserver.observe(galleryNavbar);
 let defaultElements = document.querySelectorAll('.observedElement');
 defaultElements.forEach(element => {
     elementObserver.observe(element);
+})
+
+let contactPageElements = document.querySelectorAll('.observedElement__contactPage');
+contactPageElements.forEach(element => {
+    contactPageElementObserver.observe(element);
 })

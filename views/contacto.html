@@ -24,7 +24,7 @@
             <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="#">Galeria </a>
+            <a href="">Galeria </a>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="galleryretratos.html"
@@ -49,66 +49,80 @@
       </nav>
     </header>
     <div class="stickyDiv"></div>
-    <div class="contenedor_contacto">
-      <div class="contacto">
-        <h1>Contacto</h1>
-        <p>E-mail: jcipeli@gmail.com</p>
-        <br />
-        <p>Tel (Argentina): +54 9 11 6555-5555</p>
-      </div>
-      <form
-        class="datos_usuario"
-        name="datos_usuario"
-        action="datos"
-        method="get"
-      >
-        <div class="datos_usuario1">
-          <label for="nombre"
-            >Nombre</label>
-          <input type="text" id="nombre" name="nombre"
-          />
+    <main class="contact-main">
+      <div class="contenedor_contacto">
+        <div
+          class="contacto observedElement__contactPage observedElement--fromLeft"
+        >
+          <h1>Contacto</h1>
+          <p>E-mail: jcipeli@gmail.com</p>
+          <br />
+          <p>Tel (Argentina): +54 9 11 6555-5555</p>
         </div>
-        <div class="datos_usuario2">
-          <label for="apellido"
-            >Apellido <input type="text" id="apellido" name="apellido"
-          /></label>
-        </div>
-        <div class="datos_usuario3">
-          <label for="e-mail"
-            >E-mail <input type="text" id="e-mail" name="email" required
-          /></label>
-        </div>
-        <div class="datos_usuario4">
-          <label for="telefono"
-            >Telefono <input type="number" name="telefono" required
-          /></label>
-        </div>
-        <div class="datos_usuario5">
-          <label for="edad"
-            >Edad<input
-              type="text"
-              id="edad"
-              size="4"
-              maxlength="4"
-              name="edad"
-          /></label>
-        </div>
-        <div class="datos_usuario6"></div>
-        <div class="datos_usuario7">
-          <textarea class="comentarios" name="comentarios" rows="10" cols="45">
+        <form
+          class="datos_usuario observedElement__contactPage observedElement--fromRight"
+          name="datos_usuario"
+          action="https://formsubmit.co/c70753bb21bbc786b76df2d8da5c6732"
+          method="POST"
+        >
+          <div class="datos_usuario1">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="datos_usuario2">
+            <label for="apellido"
+              >Apellido <input type="text" id="apellido" name="apellido"
+            /></label>
+          </div>
+          <div class="datos_usuario3">
+            <label for="e-mail"
+              >E-mail <input type="text" id="e-mail" name="email" required
+            /></label>
+          </div>
+          <div class="datos_usuario4">
+            <label for="telefono"
+              >Telefono <input type="number" name="telefono" required
+            /></label>
+          </div>
+          <div class="datos_usuario5">
+            <label for="edad"
+              >Edad<input
+                type="text"
+                id="edad"
+                size="4"
+                maxlength="4"
+                name="edad"
+            /></label>
+          </div>
+          <div class="datos_usuario6"></div>
+          <div class="datos_usuario7">
+            <textarea
+              class="comentarios"
+              name="comentarios"
+              rows="10"
+              cols="45"
+            >
 Escríbenos un comentario (igual no lo leemos)</textarea
-          >
-          <textarea name="comentarios2" class="comentarios2" rows="10" cols="65">
+            >
+            <textarea
+              name="comentarios2"
+              class="comentarios2"
+              rows="10"
+              cols="65"
+            >
             Escríbenos un comentario (igual no lo leemos)</textarea
-                      >
-        </div>
-        <div class="datos_usuario8">
-          <input type="submit" value="Enviar" onclick="validarEnvio()" />
-        </div>
-      </form>
-    </div>
+            >
+          </div>
+          <div class="datos_usuario8">
+            <input type="submit" value="Enviar" onclick="validarEnvio()" />
+          </div>
+        </form>
+      </div>
+    </main>
     <footer class="footer">
-      <div class="newsletter">
+      <div
+        class="newsletter observedElement__contactPage observedElement--fromLeft"
+      >
         <p>SUSCRIBITE A MI NEWSLETTER</p>
         <p>
           Enterate de las últimas noticias, eventos programados, servicios y
@@ -116,7 +130,9 @@ Escríbenos un comentario (igual no lo leemos)</textarea
         </p>
         <a class="btn-anchor" href="contacto.html">Contactame</a>
       </div>
-      <div class="footer-contact">
+      <div
+        class="footer-contact observedElement__contactPage observedElement--fromRight"
+      >
         <div class="footer-data">
           <p class="footer-data__item">Julian Marcos Cipelli</p>
           <p class="footer-data__item">Buenos Aires, Argentina</p>

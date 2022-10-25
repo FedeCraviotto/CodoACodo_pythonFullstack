@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="observedNav">
             <ul class="menu1">
                 <li>X.X.X.</li> <!-- Este xxx y el logoes representativo -->
                 <a href="../index.html"><img src="../images/Argentina_2.svg" alt="logo" width="35px"></a>
@@ -22,7 +22,7 @@
                     <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Galeria</a>
+                    <a href="">Galeria</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="galleryretratos.html">Retratos</a></li>
                         <li><a class="dropdown-item" href="#">Paisajes</a></li>
@@ -40,22 +40,42 @@
 
         </nav>
     </header>
-    <main>
+    <main class="fixed-main">
         <div class="stickyDiv"></div>
         <div class="gallery-retratos">
             <div class="gallery-container-retratos">
-                <img src="../images/Retratos/r1.JPG" alt="" class="img1 gallery-img">
-                <img src="../images/Retratos/r2.JPG" alt="" class="img2 gallery-img">
-                <img src="../images/Retratos/r3.jpg" alt="" class="img3 gallery-img">
-                <img src="../images/Retratos/r4.jpg" alt="" class="img4 gallery-img">
-                <img src="../images/Retratos/r5.JPG" alt="" class="img5 gallery-img">
-                <img src="../images/Retratos/r6.jpg" alt="" class="img6 gallery-img">
-                <img src="../images/Retratos/r7.JPG" alt="" class="img7 gallery-img">
-                <img src="../images/Retratos/r8.JPG" alt="" class="img8 gallery-img">
-                <img src="../images/Retratos/r9.JPG" alt="" class="img9 gallery-img">
+                <div class="img1 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r1.JPG" alt="" class="gallery-img">
+                </div>
+                <div class="img2 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r2.JPG" alt="" class="img2 gallery-img">
+                </div>
+                <div class="img3 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r3.jpg" alt="" class="img3 gallery-img">
+                </div>
+                <div class="img4 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r4.jpg" alt="" class="img4 gallery-img">
+                </div>
+                <div class="img5 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r5.JPG" alt="" class="img5 gallery-img">
+                </div>
+                <div class="img6 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r6.jpg" alt="" class="img6 gallery-img">
+                </div>
+                <div class="img7 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r7.JPG" alt="" class="img7 gallery-img">
+                </div>
+                <div class="img8 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r8.JPG" alt="" class="img8 gallery-img">
+                </div>
+                <div class="img9 gallery-img__container observedImage">
+                    <img src="../images/Retratos/r9.JPG" alt="" class="img9 gallery-img">
+                </div>
             </div>
         </div>
-
+        <div class="modal__container">
+            <img class="modalImage --objFit-contain" src="../images/seaLife/coral.jpg" alt="" />
+          </div>
     </main>
     <footer class="footer">
         <div class="newsletter">
@@ -88,6 +108,8 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/0e67ccfcb0.js" crossorigin="anonymous"></script>
+    <script src="../js/galleryModal.js"></script>
+    <script defer src="../js/intObserver.js"></script>
 </body>
 
 </html>

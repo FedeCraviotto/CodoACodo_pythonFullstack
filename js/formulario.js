@@ -33,7 +33,7 @@ function validarEnvio() {
     }
 
     alert("Datos enviados");
-            document.datos_usuario.submit();
+    document.datos_usuario.submit();
 }
 
 function validarNumeroEntero(valor) {                   //funcion para transformar valor a numero entero
