@@ -412,6 +412,14 @@ width: 100%;
   text-align: justify;
   padding-bottom: 8vh;
 }
+.ubicacion {
+  margin-bottom: 10px;
+}
+
+iframe {
+  width:1px;
+  min-width:100%;
+}
 /* estilos para acercade.html termina */
 
 /* estilos para contacto.html empieza*/
@@ -557,8 +565,6 @@ input[type="submit"]:hover {
   padding : 5px 0px;
 }
 
-/* .datos_usuario div input {
-
 /*MEDIA QUERIES*/
 @media (prefers-reduced-motion) {
   .observedImage,
@@ -636,7 +642,7 @@ input[type="submit"]:hover {
   }
 
   .contenedor_biografia {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
   }
 
   .contenedor_contacto {
