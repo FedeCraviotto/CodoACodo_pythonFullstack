@@ -88,26 +88,160 @@ nav.showNav {
   opacity: 1;
   filter: blur(0);
 }
-/* index.html & gallery.html CSS comienza*/
+/*Intersection observer settings termina */
 
-.gallery {
-  background-color: rgb(15, 15, 15);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -115px;
+/* header CSS comienza*/
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Abel", sans-serif;
+  color: #f8fafc;
+  position: fixed;
+  z-index: 7;
+}
+
+nav {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.--objFit-contain {
-  object-fit: contain;
-}
-
-.stickyDiv {
-  height: 90px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   background-color: rgb(15, 15, 15);
+  height: 12vh;
+}
+nav ul:last-child {
+  display: flex;
+}
+
+.menu2 li a {
+  padding: 10px;
+  font-weight: bold;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.menu2 li ul li a {
+  background-color: rgb(15, 15, 15);
+  color: #f8fafc;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+.menu2 > li {
+  float: left;
+}
+
+.menu2 > li > ul {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+}
+
+.menu2 > li a:hover {
+  color: rgb(251, 229, 152);
+}
+
+.menu2 > li:hover > ul {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* header CSS termina*/
+/* estilos para footer comienza  */
+
+.footer {
+  flex-direction: column;
+  padding-bottom: 1em;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.footer-contact {
+  width: 100%;
+}
+
+.footer-data {
+  display: none;
+  font-size: 1em;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  column-gap: 30px;
+}
+
+.socials__anchor {
+  text-decoration: none;
+  color: white;
+}
+.footer,
+.footer-contact {
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.copyright p {
+  font-size: 10px;
+}
+
+.btn-anchor {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  background-color: #4b4b75;
+  color: white;
+  border-radius: 5px;
+  line-height: 1.8;
+}
+
+.newsletter p {
+  margin: 5px 0px 10px;
+  padding : 5px 0px;
+}
+/* estilos para footer termina */
+
+/* estilos para el index.html empieza */
+
+.titulo {
+  color: #f8fafc;
+  padding: 3vh 5vw;
+  display: block;
+}
+
+.titulo h3 {
+  margin: 0 auto;
+  letter-spacing: 8px;
+}
+
+h1 {
+  margin-bottom: 5vh;
+}
+
+.portada {
+  text-align: center;
+}
+
+.fotoportada img{
+width: 100%;
 }
 
 .index {
@@ -130,6 +264,24 @@ nav.showNav {
 .index__paragraph {
   background-color: none;
   padding: 15%;
+}
+/* index.html CSS termina*/
+
+/*gallery.html y galleryretratos CSS comienza*/
+.gallery, .gallery-retratos {
+  background-color: rgb(15, 15, 15);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.stickyDiv {
+  height: 79px;
+  background-color: rgb(15, 15, 15);
 }
 
 .gallery__container {
@@ -213,13 +365,6 @@ nav.showNav {
 }
 /*gallery-retratos.html CSS comienza*/
 .gallery-retratos {
-  background-color: rgb(15, 15, 15);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -115px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 50px 15vw;
 }
 .gallery-container-retratos {
@@ -243,58 +388,42 @@ nav.showNav {
   justify-content: center;
   gap: 30px;
 }
-/*gallery-retratos.html CSS termina. */
 
-.footer,
-.footer-contact {
-  text-align: center;
-  background-color: rgb(15, 15, 15);
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-/* index.html & gallery.html CSS termina*/
-
-/* header CSS comienza*/
-
-header {
-  margin: auto;
-  width: 100%;
-  font-family: "Abel", sans-serif;
-  color: #f8fafc;
+/* estilos para gallery modal empieza*/
+.modal__container {
   position: fixed;
-  z-index: 7;
+  opacity: 0;
+  transition: opacity 700ms ease-in;
 }
 
-nav {
+.modal__container.active {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  background-color: rgb(15, 15, 15);
-  height: 90px;
-}
-nav ul:last-child {
-  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 9;
 }
 
-.menu2 li a {
-  padding: 10px;
-  font-weight: bold;
-  color: #f8fafc;
-  font-size: 14px;
+.modal__container.active::after {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  z-index: 9;
 }
 
-.menu2 li ul li a {
-  background-color: rgb(15, 15, 15);
-  color: #f8fafc;
-  text-decoration: none;
-  display: block;
-  padding: 20px;
+.modal__container img {
+  width: 300px;
+  height: 300px;
+  z-index: 10;
 }
 
 .menu2 > li {
@@ -341,49 +470,10 @@ a:active {
   display: none;
   font-size: 1em;
 }
-
-.footer-socials {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2em;
-  column-gap: 30px;
-}
-
-.socials__anchor {
-  text-decoration: none;
-  color: white;
-}
-/* estilos para footer termina */
-
-/* estilos para el main del index.html empieza */
-
-.titulo {
-  color: #f8fafc;
-  padding: 3vh 5vw;
-  display: block;
-}
-
-.titulo h3 {
-  margin: 0 auto;
-  letter-spacing: 8px;
-}
-
-h1 {
-  margin-bottom: 5vh;
-}
-
-.portada {
-  text-align: center;
-}
-
-.fotoportada img{
-width: 100%;
-}
-/* estilos para el main del index.html termina */
+/* estilos para gallery modal termina*/
+/*gallery & gallery-retratos.html CSS termina. */
 
 /* estilos para acerca de comienza */
-
 .contenedor_biografia {
   background-color: rgb(15, 15, 15);
   color: #f8fafc;
@@ -538,65 +628,6 @@ input[type="submit"]:hover {
   border-color: rgb(251, 229, 152);
 }
 /* estilos para contacto.html termina*/
-
-/* estilos para gallery empieza*/
-.modal__container {
-  position: fixed;
-  opacity: 0;
-  transition: opacity 700ms ease-in;
-}
-
-.modal__container.active {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  z-index: 9;
-}
-
-.modal__container.active::after {
-  content: "";
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.36);
-  z-index: 9;
-}
-
-.modal__container img {
-  width: 300px;
-  height: 300px;
-  z-index: 10;
-}
-/* estilos para gallery termina*/
-
-/* estilos para footer comienza*/
-
-.copyright p {
-  font-size: 10px;
-}
-
-.btn-anchor {
-  display: inline-block;
-  width: 100px;
-  height: 35px;
-  background-color: #4b4b75;
-  color: white;
-  border-radius: 5px;
-  line-height: 1.8;
-}
-
-.newsletter p {
-  margin: 5px 0px 10px;
-  padding : 5px 0px;
-}
 
 /*MEDIA QUERIES*/
 @media (prefers-reduced-motion) {
