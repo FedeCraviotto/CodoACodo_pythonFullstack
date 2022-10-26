@@ -21,7 +21,7 @@ let contenidoHeader =`
           >Retratos</a
         >
       </li>
-      <li><a class="dropdown-item" href="#">Paisajes</a></li>
+      <li><a class="dropdown-item" href="galleryPaisajes.html">Paisajes</a></li>
       <li>
         <a class="dropdown-item" href="galleryvidamarina.html"
           >Vida Marina</a
@@ -38,7 +38,7 @@ let contenidoHeader =`
 </ul>
 </nav>
   `
-// document.getElementById("sectionHeader").innerHTML=contenidoHeader;
+document.getElementById("sectionHeader").innerHTML=contenidoHeader;
 
 let contenidoFooter =`
 <div

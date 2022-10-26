@@ -12,7 +12,7 @@ let contenidoHeader =`
       <a href="#">Galeria </a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="views/galleryretratos.html">Retratos</a></li>
-        <li><a class="dropdown-item" href="#">Paisajes</a></li>
+        <li><a class="dropdown-item" href="views/galleryPaisajes.html">Paisajes</a></li>
         <li><a class="dropdown-item" href="views/galleryvidamarina.html">Vida Marina</a></li>
       </ul>
   </li>
@@ -26,7 +26,7 @@ let contenidoHeader =`
 
 </nav>
   `;
-// document.getElementById("indexHeader").innerHTML=contenidoHeader;
+document.getElementById("indexHeader").innerHTML=contenidoHeader;
 
 let contenidoFooter =`
 <div

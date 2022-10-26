@@ -284,7 +284,8 @@ width: 100%;
   background-color: rgb(15, 15, 15);
 }
 
-.gallery__container {
+.gallery__container,
+.gallery__container-paisajes {
   background-color: rgb(15, 15, 15);
   width: 95%;
   height: 100%;
@@ -306,7 +307,8 @@ width: 100%;
   overflow: hidden;
 }
 
-.gallery-img__container-retratos {
+.gallery-img__container-retratos,
+.gallery-img__container-paisajes {
   overflow: hidden;
 }
 
@@ -373,7 +375,7 @@ width: 100%;
 }
 .gallery-container-retratos,
 .gallery__container-retratos {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(15, 15, 15);
   width: 98%;
   height: 100%;
   display: grid;
@@ -710,6 +712,11 @@ input[type="submit"]:hover {
       "img9 img9";
   }
 
+  .gallery__container-paisajes {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 360px);
+  }
+
   .contenedor_biografia {
     grid-template-columns: 50% 50%;
   }
@@ -796,6 +803,76 @@ input[type="submit"]:hover {
       "img4 img4 img8 img8 img9"
       "img6 img7 img8 img8 img9";
     gap: 25px;
+  }
+
+  .gallery__container-paisajes {
+    grid-template-rows: repeat(12, 233px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "imgH01 imgH01   .    imgV01 imgV01"
+      "imgH01 imgH01   .    imgV01 imgV01"
+      "  .    imgH02 imgV02 imgV03 imgV03"
+      "  .      .    imgV02 imgV03 imgV03"
+      "  .      .      .    imgV03 imgV03"
+      "imgH03 imgH03   .    imgV04 imgV05"
+      "imgH03 imgH03   .    imgV04 imgV05"
+      "  .    imgH06   .    imgV06 imgH04"
+      "imgH05   .    imgV07 imgV06 imgV10"
+      "  .    imgV08 imgV07    .   imgV10"
+      "imgV09 imgV08 imgH06 imgH06 imgH06"
+      "imgV09    .   imgH06 imgH06 imgH06";
+    gap: 25px;
+  }
+
+  .imgV01 {
+    grid-area: imgV01;
+  }
+  .imgV02 {
+    grid-area: imgV02;
+  }
+  .imgV03 {
+    grid-area: imgV03;
+  }
+  .imgV04 {
+    grid-area: imgV04;
+  }
+  .imgV05 {
+    grid-area: imgV05;
+  }
+
+  .imgV06 {
+    grid-area: imgV06;
+  }
+  .imgV07 {
+    grid-area: imgV07;
+  }
+  .imgV08 {
+    grid-area: imgV08;
+  }
+  .imgV09 {
+    grid-area: imgV09;
+  }
+  .imgV10 {
+    grid-area: imgV10;
+  }
+  
+  .imgH01 {
+    grid-area: imgH01;
+  }
+  .imgH02 {
+    grid-area: imgH02;
+  }
+  .imgH03 {
+    grid-area: imgH03;
+  }
+  .imgH04 {
+    grid-area: imgH04;
+  }
+  .imgH05 {
+    grid-area: imgH05;
+  }
+  .imgH06 {
+    grid-area: imgH06;
   }
 }
 
