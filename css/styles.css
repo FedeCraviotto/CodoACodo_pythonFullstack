@@ -806,74 +806,11 @@ input[type="submit"]:hover {
   }
 
   .gallery__container-paisajes {
-    grid-template-rows: repeat(12, 233px);
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-      "imgH01 imgH01   .    imgV01 imgV01"
-      "imgH01 imgH01   .    imgV01 imgV01"
-      "  .    imgH02 imgV02 imgV03 imgV03"
-      "  .      .    imgV02 imgV03 imgV03"
-      "  .      .      .    imgV03 imgV03"
-      "imgH03 imgH03   .    imgV04 imgV05"
-      "imgH03 imgH03   .    imgV04 imgV05"
-      "  .    imgH06   .    imgV06 imgH04"
-      "imgH05   .    imgV07 imgV06 imgV10"
-      "  .    imgV08 imgV07    .   imgV10"
-      "imgV09 imgV08 imgH06 imgH06 imgH06"
-      "imgV09    .   imgH06 imgH06 imgH06";
+    grid-template-rows: auto;
     gap: 25px;
   }
 
-  .imgV01 {
-    grid-area: imgV01;
-  }
-  .imgV02 {
-    grid-area: imgV02;
-  }
-  .imgV03 {
-    grid-area: imgV03;
-  }
-  .imgV04 {
-    grid-area: imgV04;
-  }
-  .imgV05 {
-    grid-area: imgV05;
-  }
-
-  .imgV06 {
-    grid-area: imgV06;
-  }
-  .imgV07 {
-    grid-area: imgV07;
-  }
-  .imgV08 {
-    grid-area: imgV08;
-  }
-  .imgV09 {
-    grid-area: imgV09;
-  }
-  .imgV10 {
-    grid-area: imgV10;
-  }
-  
-  .imgH01 {
-    grid-area: imgH01;
-  }
-  .imgH02 {
-    grid-area: imgH02;
-  }
-  .imgH03 {
-    grid-area: imgH03;
-  }
-  .imgH04 {
-    grid-area: imgH04;
-  }
-  .imgH05 {
-    grid-area: imgH05;
-  }
-  .imgH06 {
-    grid-area: imgH06;
-  }
 }
 
 @media (min-width: 1980px) {
