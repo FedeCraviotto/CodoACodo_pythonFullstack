@@ -94,7 +94,7 @@ nav.showNav {
 
 header {
   margin: auto;
-  width: 100%;
+  width: 100vw;
   font-family: "Abel", sans-serif;
   color: #f8fafc;
   position: fixed;
@@ -108,7 +108,7 @@ nav {
   padding-left: 1vw;
   padding-right: 1vw;
   background-color: rgb(15, 15, 15);
-  height: 12vh;
+  height: 90px;
 }
 nav ul:last-child {
   display: flex;
@@ -280,7 +280,7 @@ width: 100%;
 }
 
 .stickyDiv {
-  height: 79px;
+  height: 90px;
   background-color: rgb(15, 15, 15);
 }
 
@@ -312,7 +312,6 @@ width: 100%;
 
 .gallery-img:hover {
   cursor: pointer;
-  position: relative;
   transform: scale(1.1);
   filter: grayscale(0%);
   z-index: 0;
@@ -334,6 +333,7 @@ width: 100%;
 
 
 .showElement-contactPage {
+  position:relative;
   filter: blur(0);
   transform: translateX(0);
   opacity: 1;
@@ -640,12 +640,6 @@ input[type="submit"]:hover {
 
 
 /*MEDIA QUERIES*/
-@media (prefers-reduced-motion) {
-  .observedImage,
-  .observedNav {
-    transition: none;
-  }
-}
 
 @media (min-width: 576px) {
   .footer-data {

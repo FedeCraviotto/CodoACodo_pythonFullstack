@@ -1,41 +1,32 @@
 let contenidoHeader =`
-    <nav class="observedNav">
-    <ul class="menu1">
-    <li>J.M.C.</li>
-    <a href="../index.html"
-        ><img src="../images/Argentina_2.svg" alt="logo" width="35px"/></a>
-    </ul>
-    <ul class="menu2">
-    <li>
-        <a href="../index.html">Home</a>
+<nav class="observedNav">
+<ul class="menu1">
+  <li>J.M.C.</li>  <!-- Estas iniciales y el logo son representativos -->
+  <a href="index.html"><img src="images/Argentina_2.svg" alt="logo" width="35px"></a>
+  </ul>
+<ul class="menu2">
+  <li>
+      <a href="index.html">Home</a>
     </li>
-    <li>
-        <a href="#">Galeria</a>
-        <ul class="dropdown-menu">
-        <li>
-            <a class="dropdown-item" href="../views/galleryretratos.html"
-            >Retratos</a
-            >
-        </li>
+  <li>
+      <a href="#">Galeria </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="views/galleryretratos.html">Retratos</a></li>
         <li><a class="dropdown-item" href="#">Paisajes</a></li>
-        <li>
-            <a class="dropdown-item" href="../views/galleryvidamarina.html"
-            >Vida marina</a
-            >
-        </li>
-        </ul>
+        <li><a class="dropdown-item" href="views/galleryvidamarina.html">Vida Marina</a></li>
+      </ul>
+  </li>
+  <li>
+      <a href="views/acercade.html">Acerca de</a>
+  </li>
+  <li>
+    <a href="views/contacto.html">Contacto</a>
     </li>
+</ul>
 
-    <li>
-        <a href="../views/acercade.html">Acerca de</a>
-    </li>
-    <li>
-        <a href="../views/contacto.html">Contacto</a>
-    </li>
-    </ul>
-    </nav>
-  `
-// document.getElementById("idHeader").innerHTML=contenidoHeader;
+</nav>
+  `;
+// document.getElementById("indexHeader").innerHTML=contenidoHeader;
 
 let contenidoFooter =`
 <div
@@ -81,7 +72,7 @@ let contenidoFooter =`
           y no obviar hacer mención de la fuente de autoría.
         </p>
       </div>
-`
+`;
 let domFooters = document.querySelectorAll(".domFooter")
 domFooters.forEach(footer => {
   footer.innerHTML=contenidoFooter;
