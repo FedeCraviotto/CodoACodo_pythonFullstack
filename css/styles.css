@@ -306,6 +306,10 @@ width: 100%;
   overflow: hidden;
 }
 
+.gallery-img__container-retratos {
+  overflow: hidden;
+}
+
 .gallery-img:hover {
   cursor: pointer;
   position: relative;
@@ -367,7 +371,8 @@ width: 100%;
 .gallery-retratos {
   padding: 50px 15vw;
 }
-.gallery-container-retratos {
+.gallery-container-retratos,
+.gallery__container-retratos {
   background-color: rgba(0, 0, 0, 0.25);
   width: 98%;
   height: 100%;
@@ -629,6 +634,11 @@ input[type="submit"]:hover {
 }
 /* estilos para contacto.html termina*/
 
+.--objFit-contain {
+  object-fit: contain;
+}
+
+
 /*MEDIA QUERIES*/
 @media (prefers-reduced-motion) {
   .observedImage,
@@ -688,7 +698,8 @@ input[type="submit"]:hover {
     width: 710px;
     height: 550px;
   }
-  .gallery-container-retratos {
+  .gallery-container-retratos,
+  .gallery__container-retratos {
     grid-template-rows: repeat(11, 235px);
     grid-template-columns: repeat(2, 360px);
     grid-template-areas:
@@ -780,7 +791,8 @@ input[type="submit"]:hover {
   .gallery-retratos {
     padding: 50px 8vw;
   }
-  .gallery-container-retratos {
+  .gallery-container-retratos,
+  .gallery__container-retratos {
     grid-template-rows: repeat(5, 180px);
     grid-template-columns: repeat(5, 233px);
     grid-template-areas:

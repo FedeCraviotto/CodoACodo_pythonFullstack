@@ -1,4 +1,4 @@
-var contenidoHeader =`
+let contenidoHeader =`
     <nav class="observedNav">
     <ul class="menu1">
     <li>J.M.C.</li>
@@ -35,18 +35,22 @@ var contenidoHeader =`
     </ul>
     </nav>
   `
-document.getElementById("idHeader").innerHTML=contenidoHeader;
+// document.getElementById("idHeader").innerHTML=contenidoHeader;
 
-var contenidoFooter =`
-    <div class="newsletter">
+let contenidoFooter =`
+<div
+        class="newsletter observedElement__contactPage observedElement--fromLeft"
+      >
         <p>SUSCRIBITE A MI NEWSLETTER</p>
         <p>
           Enterate de las últimas noticias, eventos programados, servicios y
           ofertas especiales
         </p>
-        <a class="btn-anchor" href="/contacto.html">Contactame</a>
+        <a class="btn-anchor" href="contacto.html">Contactame</a>
       </div>
-      <div class="footer-contact">
+      <div
+        class="footer-contact observedElement__contactPage observedElement--fromRight"
+      >
         <div class="footer-data">
           <p class="footer-data__item">Julian Marcos Cipelli</p>
           <p class="footer-data__item">Buenos Aires, Argentina</p>
@@ -76,6 +80,9 @@ var contenidoFooter =`
           autor. En caso de compartir los recursos hacerlo de manera responsable
           y no obviar hacer mención de la fuente de autoría.
         </p>
-    </div>
+      </div>
 `
-document.getElementById("idFooter").innerHTML=contenidoFooter;
+let domFooters = document.querySelectorAll(".domFooter")
+domFooters.forEach(footer => {
+  footer.innerHTML=contenidoFooter;
+})
