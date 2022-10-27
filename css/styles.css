@@ -8,7 +8,8 @@
 
 body {
   background-color: rgb(15, 15, 15);
-  overflow-x: hidden; /*Esencial, si usamos el observer*/
+  overflow-x: hidden; 
+  /*Esencial, si usamos el observer*/
 }
 
 html::-webkit-scrollbar {
@@ -434,52 +435,12 @@ h1 {
   z-index: 10;
 }
 
-.menu2 > li {
-  float: left;
-}
-
-.menu2 > li > ul {
-  display: none;
-  position: absolute;
-  min-width: 120px;
-}
-
-.menu2 > li a:hover {
-  color: rgb(251, 229, 152);
-}
-
-.menu2 > li:hover > ul {
-  display: block;
-}
-
-li {
-  list-style: none;
-}
-
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
 }
 /* header CSS termina*/
-/* estilos para footer comienza  */
-.footer {
-  flex-direction: column;
-  padding-bottom: 1em;
-  width: 90%;
-  margin: 0px auto;
-}
-
-.footer-contact {
-  width: 100%;
-}
-
-.footer-data {
-  display: none;
-  font-size: 1em;
-}
-/* estilos para gallery modal termina*/
-/*gallery & gallery-retratos.html CSS termina. */
 
 /* estilos para acerca de comienza */
 .contenedor_biografia {
@@ -775,9 +736,6 @@ input[type="submit"]:hover {
     margin: 15px;
   }
 
-  .menu2 > li {
-    float: left;
-  }
   .gallery {
     padding: 50px;
   }
@@ -822,7 +780,7 @@ input[type="submit"]:hover {
     background-color: #FFBF00;
   }
   .gallery__container-paisajes {
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(16, 270px);
     grid-template-areas:
       "imgH01 imgH01 ."
@@ -841,8 +799,8 @@ input[type="submit"]:hover {
       "imgV09 imgV03 ."
       "imgV05 imgV03 imgV04"
       "imgV05 . imgV04";
-    width: 90%;
     margin: 0px auto;
+    width: 90%;
     gap: 25px;
   }
 

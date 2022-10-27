@@ -42,7 +42,7 @@ document.getElementById("sectionHeader").innerHTML=contenidoHeader;
 
 let contenidoFooter =`
 <div
-        class="newsletter observedElement__contactPage observedElement--fromLeft"
+        class="newsletter"
       >
         <p>SUSCRIBITE A MI NEWSLETTER</p>
         <p>
@@ -52,7 +52,7 @@ let contenidoFooter =`
         <a class="btn-anchor" href="contacto.html">Contactame</a>
       </div>
       <div
-        class="footer-contact observedElement__contactPage observedElement--fromRight"
+        class="footer-contact"
       >
         <div class="footer-data">
           <p class="footer-data__item">Julian Marcos Cipelli</p>
