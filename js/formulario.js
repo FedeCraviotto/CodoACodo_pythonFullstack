@@ -13,12 +13,6 @@ function validarEnvio() {
         return 0;
     }
 
-    // if(document.datos_usuario.email.value.length < 10) {      //validacion del mail por html con required. Tengo que revisar como validar con @ y .
-    //     alert("Ingrese su E-mail");                      
-    //     document.datos_usuario.email.focus();
-    //     return 0;
-    // }
-
     var edad = document.datos_usuario.edad.value       //validacion de edad por numero entero con funcion
     var edad = validarNumeroEntero(edad) 
     document.datos_usuario.edad.value = edad

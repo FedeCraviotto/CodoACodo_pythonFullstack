@@ -37,7 +37,7 @@ let contenidoFooter =`
           Enterate de las últimas noticias, eventos programados, servicios y
           ofertas especiales
         </p>
-        <a class="btn-anchor" href="contacto.html">Contactame</a>
+        <a class="btn-anchor" href="views/contacto.html">Contactame</a>
       </div>
       <div
         class="footer-contact"
@@ -69,7 +69,7 @@ let contenidoFooter =`
         <p>
           © JMC 2022. Todo el contenido de este sitio está sujeto a derechos de
           autor. En caso de compartir los recursos hacerlo de manera responsable
-          y no obviar hacer mención de la fuente de autoría.
+          y no obviar hacer mención de la fuente de autoría. Sitio Web desarrollado por Federico N. Craviotto y Julian M. Cipelli
         </p>
       </div>
 `;

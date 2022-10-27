@@ -435,12 +435,12 @@ h1 {
   z-index: 10;
 }
 
-a:link,
+/* a:link,                      este texto tambien esta repetido, podria quitarse
 a:visited,
 a:active {
   text-decoration: none;
-}
-/* header CSS termina*/
+} */
+/* estilos para gallery modal termina*/
 
 /* estilos para acerca de comienza */
 .contenedor_biografia {
@@ -529,6 +529,10 @@ iframe {
   justify-content: space-around;
   height: 100%;
   width: 100%;
+}
+
+.container_ubicaicon {
+  margin-top: 60px;
 }
 
 .datos_usuario {

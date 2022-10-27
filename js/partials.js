@@ -1,7 +1,7 @@
 let contenidoHeader =`
 <nav class="observedNav">
 <ul class="menu1">
-  <li>X.X.X.</li>
+  <li>J.M.C.</li>
   <a href="../index.html"
     ><img
       src="../images/Argentina_2.svg"
@@ -81,7 +81,7 @@ let contenidoFooter =`
         <p>
           © JMC 2022. Todo el contenido de este sitio está sujeto a derechos de
           autor. En caso de compartir los recursos hacerlo de manera responsable
-          y no obviar hacer mención de la fuente de autoría.
+          y no obviar hacer mención de la fuente de autoría. Sitio Web desarrollado por Federico N. Craviotto y Julian M. Cipelli
         </p>
       </div>
 `
