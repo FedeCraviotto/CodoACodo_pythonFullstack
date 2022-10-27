@@ -8,6 +8,7 @@
 
 body {
   background-color: rgb(15, 15, 15);
+  overflow-x: hidden; /*Esencial, si usamos el observer*/
 }
 
 html::-webkit-scrollbar {
@@ -821,14 +822,8 @@ input[type="submit"]:hover {
     background-color: #FFBF00;
   }
   .gallery__container-paisajes {
-    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
-    grid-template-rows: repeat(16, 1fr);
-    /* grid-template-areas:
-    "imgH01 imgH02 imgH03"
-    "imgH06 imgH05 imgH04"
-    "imgV01 imgV02 imgV03"
-    "imgV04 imgV05 imgV06"
-    "imgV07 imgV08 imgV09";  imgH07*/
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(16, 270px);
     grid-template-areas:
       "imgH01 imgH01 ."
       "imgH01 imgH01 imgV01"
@@ -899,6 +894,15 @@ input[type="submit"]:hover {
   }
   .imgV09 {
     grid-area: imgV09;
+  }
+}
+
+@media (min-width:1700px){
+  .modal__container img {
+    width: auto;
+    height: auto;
+    max-width: 1700px;
+    max-height: 1400px;
   }
 }
 
