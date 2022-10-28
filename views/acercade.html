@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>About</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
   </head>
   <body>
-    <header id="sectionHeader">
-
-    </header>
+    <header id="sectionHeader"></header>
     <div class="stickyDiv"></div>
     <div class="contenedor_biografia fixed-main">
       <div class="texto_biografia">
@@ -41,7 +43,9 @@
             fotógrafo Daniel Kwonne.
           </p>
 
-          <h2 class="observedElement transition-quick1">Exposiciones Individuales</h2>
+          <h2 class="observedElement transition-quick1">
+            Exposiciones Individuales
+          </h2>
           <ul class="observedElement transition-quick2">
             <li>Fregadero/Nadar</li>
             <li>NP33</li>
@@ -51,7 +55,9 @@
             <li>Sala de exposiciones Inga Vanheinsensein</li>
             <li>Imaginarte Expo La Rural 2019 y 2020</li>
           </ul>
-          <h2 class="observedElement transition-quick1">Exposiciones Colectivas</h2>
+          <h2 class="observedElement transition-quick1">
+            Exposiciones Colectivas
+          </h2>
           <ul class="observedElement transition-quick2">
             <li>Galería Axel, Santa Fe 2015</li>
             <li>Galería Contrastes, Malba Recoleta</li>
@@ -63,7 +69,11 @@
         </div>
       </div>
       <div class="img_biografia">
-        <img class="observedElement transition-quick1" src="../images/1664921225131.jpg" alt="Persona con túnica naranja parada con un paraguas bajo un techo mientras llueve" />
+        <img
+          class="observedElement transition-quick1"
+          src="../images/1664921225131.jpg"
+          alt="Persona con túnica naranja parada con un paraguas bajo un techo mientras llueve"
+        />
       </div>
 
       <div class="clientes">
@@ -84,19 +94,45 @@
           cultural tours
         </p>
       </div>
-      
-      <div class="API-container">
 
+      <div class="API-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
-    <footer class="footer domFooter">
-    </footer>
+    <footer class="footer domFooter"></footer>
     <script src="../js/partials.js"></script>
-    <script src="https://kit.fontawesome.com/0e67ccfcb0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0e67ccfcb0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/iframeResizer.min.js">
       iFrameResize({ log: true }, '#mapa_ubicacion')
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../js/intObserver.js"></script>
     <script src="../js/apiRequests.js"></script>
+    <script src="../js/imageSlider.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="swiper-slide">
+  <img src="../images/slider/PH01.jpg" alt="" class="swiper__img" />
+  <div class="swiper__desc">
+    <h4>Autor: <span>Pepe</span></h4>
+    <p>Descripción de la obra: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo excepturi facilis eaque, repudiandae quasi eligendi ipsa placeat omnis cumque ex tenetur ullam. Perferendis explicabo libero nemo quisquam ratione? Sed!</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="../images/slider/PH02.jpg" alt="" class="swiper__img" />
+</div>
+<div class="swiper-slide">
+  <img src="../images/slider/PH03.jpg" alt="" class="swiper__img" />
+</div> -->

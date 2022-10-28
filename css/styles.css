@@ -611,6 +611,37 @@ input[type="submit"]:hover {
 }
 
 /*MEDIA QUERIES*/
+.API-container {
+  width: 400px;
+  background-color: #222;
+  height: fit-content;
+
+}
+
+.swiper {
+  width: 90%;
+  height: 400px
+}
+
+div.swiper-slide {
+  position: relative;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper__desc {
+  position: absolute;
+  max-width: 100%;
+  padding: 4px 10px;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: #e7e7ed;
+  bottom: 30px;
+}
+
+
 
 @media (min-width: 576px) {
   .footer-data {
@@ -724,6 +755,9 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 1200px) {
+  .API-container {
+    width: 650px; 
+  }
   textarea.comentarios {
     display: none;
   }
