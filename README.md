@@ -3,7 +3,7 @@ Desarrollado en el marco de Codo a Codo Python Fullstack
 ## TPO Desarrollo Web - HTML, CSS y Javascript
 ### Grupo 3 - Integrantes:
 
-Julian Cipelli <br />
+Julian Marcos Cipelli <br />
 Federico Nicolás Craviotto
 
 ### Tablero de Trello : https://trello.com/b/GBJqPDdu/grupo-python-codo-a-codo
@@ -52,5 +52,5 @@ proyecto;
 - Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un
 60% de forma correcta.
 
-- Entrega: Subida al servidor de Netlify y Github Pages
-- Plazo de entrega: 28 de Octubre del 2022
+- [x] Entrega: Subida al servidor de Netlify y Github Pages
+- [x] Plazo de entrega: 28 de Octubre del 2022
