@@ -557,6 +557,10 @@ iframe {
 
 .datos_usuario .datos_usuario8 {
   text-align: start;
+  cursor: pointer;
+}
+.datos_usuario8 input{
+  cursor: pointer;
 }
 
 textarea {
@@ -610,22 +614,22 @@ input[type="submit"]:hover {
   display: none;
 }
 
-/*MEDIA QUERIES*/
-.API-container {
-  width: 400px;
-  background-color: #222;
-  height: fit-content;
 
+.API-container {
+  max-width: 300px;
+  height: fit-content;
+  background-color: #222;
+  margin: 0px auto;
 }
 
 .swiper {
   width: 90%;
-  height: 400px
+  height: 300px
 }
 
 div.swiper-slide {
   position: relative;
-  height: 400px;
+  height: 300px;
 }
 
 .swiper-slide img {
@@ -635,15 +639,53 @@ div.swiper-slide {
 .swiper__desc {
   position: absolute;
   max-width: 100%;
-  padding: 4px 10px;
+  padding: 2px 8px;
   background-color: rgba(0, 0, 0, 0.589);
   color: #e7e7ed;
-  bottom: 30px;
+  bottom: 20px;
 }
 
+.swiper__desc p {
+  font-size: 13px;
+}
 
+.swiper__desc,
+.swiper__desc p,
+.swiper__desc h4 {
+  width: 100%;
+}
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e7e7ed;
+  background-color: rgba(0, 0, 0, 0.30);
+  height: 26px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.influencias__title {
+  padding :15px 0px;
+  font-size: 30px;
+}
+
+/*MEDIA QUERIES*/
 @media (min-width: 576px) {
+  .API-container {
+    max-width: 320px;
+  }
+  .swiper {
+    height: 370px
+  }
+  div.swiper-slide {
+    height: 370px;
+  }
+  .swiper__desc p {
+    font-size: 14px;
+  }
   .footer-data {
     display: block;
   }
@@ -680,6 +722,9 @@ div.swiper-slide {
 }
 
 @media (min-width: 768px) {
+  .API-container {
+    max-width: 370px;
+  }
   .fotoportada {
     width: 75%;
     margin: 0px auto;
@@ -755,8 +800,26 @@ div.swiper-slide {
 }
 
 @media (min-width: 1200px) {
+  .swiper-button-next,
+.swiper-button-prev {
+  height: 36px;
+}
   .API-container {
-    width: 650px; 
+    max-width: 100%; 
+  }
+  .swiper {
+    height: 400px
+  }
+  
+  div.swiper-slide {
+    height: 400px;
+  }
+  .swiper__desc {
+    padding: 4px 10px;
+    bottom: 30px;
+  }
+  .swiper__desc p {
+    font-size: 16px;
   }
   textarea.comentarios {
     display: none;
@@ -765,7 +828,7 @@ div.swiper-slide {
     display: block;
   }
   .parrafo_bio h2 {
-    padding: 5vh 5vw 0;
+    padding: 5vh 5vw 20px;
   }
 
   input[type="text"],
