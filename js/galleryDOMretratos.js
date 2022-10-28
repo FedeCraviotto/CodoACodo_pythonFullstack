@@ -5,6 +5,6 @@ retratosimageURLs.forEach((imgLink, index) => {
     let galleryImgContainer = document.createElement('div'); 
     galleryImgContainer.classList.add('gallery-img__container-retratos', 'observedImage', `img${index + 1}`); 
     galleryImgContainer.innerHTML = 
-    `<img src="../images/Retratos/${imgLink}.jpg" alt="${imgLink}" class="img${index + 1} gallery-img">`; 
+    `<img src="../images/Retratos/2/${imgLink}.jpg" alt="${imgLink}" class="img${index + 1} gallery-img">`; 
     galleryContainerRetratos.append(galleryImgContainer); 
 });
