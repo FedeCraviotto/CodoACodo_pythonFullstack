@@ -52,5 +52,5 @@ proyecto;
 - Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un
 60% de forma correcta.
 
-- [x] Entrega: Subida al servidor de Netlify y Github Pages
-- [x] Plazo de entrega: 28 de Octubre del 2022
+- Entrega: Subida al servidor de Netlify y Github Pages
+- Plazo de entrega: 28 de Octubre del 2022
