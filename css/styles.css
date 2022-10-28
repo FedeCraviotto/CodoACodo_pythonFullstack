@@ -332,7 +332,7 @@ h1 {
 .observedElement--fromLeft {
   opacity: 0;
   filter: blur(25px);
-  transform: translateX(-110%);
+  transform: translateX(-100%);
   transition: all 0.8s ease 1.4s;
 }
 
@@ -492,12 +492,16 @@ a:active {
   width: 100%;
 }
 
-.clientes {
+.cliente {
   margin-top: 5vh;
   text-align: start;
 }
 .clientes > p {
   padding: 1vw 12vw 1vw 0vw;
+}
+.clientes h2 {
+  font-size: 30px;
+  padding: 10px 0;
 }
 
 .contenedor_biografia .clientes_logos {
@@ -531,7 +535,7 @@ iframe {
   width: 100%;
 }
 
-.container_ubicaicon {
+.container_ubicacion {
   margin-top: 60px;
 }
 
