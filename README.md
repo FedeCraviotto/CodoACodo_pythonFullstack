@@ -1,4 +1,7 @@
 # Portfolio: JMC - Fotografía
+
+#### Proximamente (CRUD, DB, Django, VUE/REACT)
+
 Desarrollado en el marco de Codo a Codo Python Fullstack
 ## TPO Desarrollo Web - HTML, CSS y Javascript
 ### Grupo 3 - Integrantes:
